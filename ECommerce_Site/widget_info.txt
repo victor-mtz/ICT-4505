@@ -1,0 +1,16 @@
+I attempted to create widgets without using JQuery based on the posted announcement. 
+
+The tooltip element (applied to both index.html and checkout.html) was created using 
+vanilla JS. 
+
+The datepicker widget (applied to checkout.html) was created exclusively through HTML 
+using the date attribute in the input element. I did use JS to default the date in the input
+element to today's date.
+
+I wasn't sure how to implement an alternative to JQuery's button widget so I went ahead and 
+implemented two different widgets using HTML, JS, and CSS. Both of the widgets can be seen in 
+checkout.html. One of them is a toast notification that appears at the bottom right corner of the 
+screen whenever an alternative payment button is clicked. The second widget goes along with the
+toast in the form of a progress bar that goes across the toast.
+
+The progress bar implementation is not perfect as the timing is a bit off.

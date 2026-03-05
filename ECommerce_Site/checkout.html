@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <script src="index.js" defer="true"></script>
+    <nav>
+      <a href="index.html">Home</a>
+      <section id="shopping-cart-container" title="Shopping Cart">
+        <a href="shopping-cart.html">
+          <img id="shopping-cart-img" src="./resources/shopping_cart.png" />
+        </a>
+      </section>
+    </nav>
+    <main>
+      <section id="checkout-delivery-options-container">
+        <div class="selected" id="checkout-delivery-options">Ship To Me</div>
+        <div id="checkout-delivery-options">Free Store Pickup</div>
+      </section>
+      <section id="checkout-customer-information">
+        <section id="checkout-email-section">
+          <input type="email" placeholder="Email" />
+          <span id="checkout-email-section-details"
+            >Order updates will be sent to this address.</span
+          >
+        </section>
+        <section id="checkout-customer-name">
+          <input placeholder="First Name" />
+          <input placeholder="Last Name" />
+        </section>
+        <section id="checkout-customer-address">
+          <input placeholder="Street address" />
+        </section>
+        <section id="checkout-city-state">
+          <input placeholder="City" />
+          <input placeholder="State" />
+        </section>
+        <section id="checkout-zip-code">
+          <input placeholder="Zip Code" />
+        </section>
+        <section id="checkout-card-details">
+          <input placeholder="Cardholder name" />
+          <input placeholder="Card number" />
+          <input
+            type="date"
+            placeholder="Card Expiration"
+            id="card-expiration"
+            data-tooltip="Enter card expiration date."
+          />
+        </section>
+        <section id="checkout-alternative-payments">
+          <button>PayPal</button>
+          <button>Apple Pay</button>
+          <button>Bitcoin</button>
+        </section>
+        <button
+          id="checkout-submit"
+          onclick="location.href = 'confirmation.html'"
+          type="submit"
+        >
+          Submit order
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
